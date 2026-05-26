@@ -1,0 +1,202 @@
+/* ============================================
+   GLOBAL STYLES & TYPOGRAPHY
+   ============================================ */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+h1 {
+  letter-spacing: 6px;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+/* Navigation bar non-fixed */
+.navbar {
+  display: flex;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 0;
+}
+
+/* Navigation bar fixed */
+/* .navbar {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 980px;
+  margin: 0 auto;
+  z-index: 100;
+  background-color: #fff;
+} */
+
+.nav-link {
+  flex: 1;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  font-family: "Raleway", Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  display: block;
+}
+
+.nav-link:hover {
+  color: #000;
+  border-bottom-color: #333;
+  background-color: transparent;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+
+.section-title {
+  letter-spacing: 4px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-body {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/* ============================================
+   CONTENT ITEMS
+   ============================================ */
+
+.experience-item,
+.project-item,
+.education-item,
+.certification-item,
+.testimonial-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.experience-item:last-child,
+.project-item:last-child,
+.education-item:last-child,
+.certification-item:last-child,
+.testimonial-item:last-child {
+  border-bottom: none;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.item-subtitle {
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.experience-list {
+  margin: 8px 0 16px 0;
+  padding-left: 20px;
+}
+
+/* .experience-list li {
+  margin-bottom: 10px;
+  color: #3a3a3a;
+} */
+
+/* ============================================
+   COMPONENTS
+   ============================================ */
+
+.skill-tag {
+  display: inline-block;
+  background-color: #f1f1f1;
+  padding: 4px 12px;
+  margin: 4px 4px 4px 0;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #555;
+}
+
+.contact-item {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contact-icon {
+  width: 32px;
+  font-size: 18px;
+  margin-right: 16px;
+  color: #333;
+}
+
+.testimonial-attribution {
+  font-size: 14px;
+  color: #333;
+  font-style: normal;
+  margin-top: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ============================================
+   IMAGES & UTILITIES
+   ============================================ */
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.spacer-lg {
+  height: 192px;
+}
+
+/* ============================================
+   RESPONSIVE & MEDIA QUERIES
+   ============================================ */
+
+@media (max-width: 600px) {
+  .nav-hide-small {
+    display: none;
+  }
+}
